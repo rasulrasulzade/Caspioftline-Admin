@@ -1,0 +1,50 @@
+extends ../template_includes/head
+
+block unique-content
+    include ../template_includes/navbar
+    main.main.d-flex
+        .left
+            .left-nv.table-responsive
+                a.left-nv-link(href="#")
+                    img.mx-4(src="./img/icons/dashboard.svg")
+                    span.text-nowrap Dashboard
+                a.left-nv-link(href="#")
+                    img.mx-4(src="./img/icons/worksheet.svg")
+                    span.text-nowrap Layihələr
+                a.left-nv-link(href="#")
+                    img.mx-4(src="./img/icons/workers.svg")
+                    span.text-nowrap Üzvləri
+                a.left-nv-link(href="#")
+                    img.mx-4(src="./img/icons/candidates.svg")
+                    span.text-nowrap Namizədlər
+                a.left-nv-link(href="#")
+                    img.mx-4(src="./img/icons/chat/blue.svg")
+                    span.text-nowrap Mesajlar
+                a.left-nv-link(href="#")
+                    img.mx-4(src="./img/icons/tabel.svg")
+                    span.text-nowrap Admin 
+        .content
+            .breadCrumb.my-5
+                a.breadCrumb-link(href="#") Dashboard
+                img.mx-3(src="./img/icons/next/w.svg")
+                a.breadCrumb-link(href="#") Layihələr
+                img.mx-3(src="./img/icons/next/w.svg")
+                a.breadCrumb-link.breadCrumb-link--passive CO Project
+            button.btn.new-task(type='button', data-toggle='modal', data-target='#exampleModal')
+                .add-new &#43;
+                .new-task__title Yeni task yarat
+            #exampleModal.modal.fade.my-modal(tabindex='-1', role='dialog', aria-labelledby='exampleModalLabel', aria-hidden='true')
+                .modal-dialog.m-dialog(role='document')
+                    .modal-content.m-content.mx-auto
+                        .modal-header.m-header
+                            h5#exampleModalLabel.m-title Yeni tapşırıq yarat
+                            button.close(type='button', data-dismiss='modal', aria-label='Close')
+                                span(aria-hidden='true') ×
+                        .modal-body.m-body
+                            .m-body__title.mb-3 Başlıq
+                            form(action="")
+                                input.m-body__input(type="text")
+                        .modal-footer.m-footer
+                            button.btn.m-btn.no(type='button', data-dismiss='modal') Xeyr
+                            button.btn.m-btn.yes(type='button') Bəli
+

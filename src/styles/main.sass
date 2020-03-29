@@ -1,0 +1,36 @@
+$main-font: Roboto, sans-serif
+$main-color: #042D5F
+$second-color: #1E60A0
+$content-black: #1E1E1E
+$content-white: #F2F5F9
+$content-bg: #F0F3F6
+$breadCrumb-passive: #68819F
+$work-color: #474F58
+$job-color: #323C47
+
+
+
+html
+	font-size: 10px
+body
+	width: 100%
+	height: 100%
+	margin: 0
+	padding: 0
+	font-family: $main-font
+a 
+	text-decoration: none!important
+	
+@media (max-width: 991px)
+	html
+		font-size: 6px
+
+@import fonts
+@import common
+@import preloader
+@import mixin
+@import components/navbar
+@import components/index
+@import components/tasks
+@import components/newTask
+@import components/waitingProject

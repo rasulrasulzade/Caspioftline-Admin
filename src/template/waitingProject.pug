@@ -1,0 +1,40 @@
+extends ../template_includes/head
+
+block unique-content
+    include ../template_includes/navbar
+    main.main.d-flex
+        .left
+            .left-nv.table-responsive
+                a.left-nv-link(href="#")
+                    img.mx-4(src="./img/icons/dashboard.svg")
+                    span.text-nowrap Dashboard
+                a.left-nv-link(href="#")
+                    img.mx-4(src="./img/icons/worksheet.svg")
+                    span.text-nowrap Layihələr
+                a.left-nv-link(href="#")
+                    img.mx-4(src="./img/icons/workers.svg")
+                    span.text-nowrap Üzvləri
+                a.left-nv-link(href="#")
+                    img.mx-4(src="./img/icons/candidates.svg")
+                    span.text-nowrap Namizədlər
+                a.left-nv-link(href="#")
+                    img.mx-4(src="./img/icons/chat/blue.svg")
+                    span.text-nowrap Mesajlar
+                a.left-nv-link(href="#")
+                    img.mx-4(src="./img/icons/tabel.svg")
+                    span.text-nowrap Admin 
+        .content
+            .breadCrumb.my-5
+                a.breadCrumb-link(href="#") Dashboard
+                img.mx-3(src="./img/icons/next/w.svg")
+                a.breadCrumb-link(href="#") Layihələr
+                img.mx-3(src="./img/icons/next/w.svg")
+                a.breadCrumb-link.breadCrumb-link--passive CO Project
+            .waiting-project.w-100
+                .waiting-project__header
+                    .project-title Improve the Useability and Configuration of Payment Provider to Imrove Checkout
+                    .project-date 14 Oct 2019
+                .waiting-project__body
+                .waiting-project__footer
+                    button.btn.waiting-btn.del(type="button") Sil
+                    button.btn.waiting-btn.add(type="button") Baxılanlara əlavə et

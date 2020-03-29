@@ -1,0 +1,39 @@
+.waiting-project
+    background-color: white
+    box-shadow: 0px 2px 5px rgba(104, 129, 159, 0.337139)
+    border-radius: 4px
+    &__header
+        display: flex
+        justify-content: space-between
+        padding: 2.6rem 2rem
+        border-bottom: 1px solid #F2F2F2
+        .project-title 
+            font: 400 18px $main-font
+            color: $content-black
+        .project-date
+            font: 400 17px $main-font
+            color: #68819F
+    &__footer
+        display: flex
+        justify-content: flex-end
+        padding: 1.5rem 2rem 4rem 2rem
+        .waiting-btn
+            margin: 0 5px
+            padding: 12px 25px
+            border: 1px solid $main-color
+            box-sizing: border-box
+            border-radius: 5px
+            font: 400 14px $main-font
+            transition: all 0.4s 
+        .del
+            background-color: white
+            color: $main-color
+            &:hover
+                background-color: $main-color
+                color: white
+        .add
+            background-color: $main-color
+            color: white
+            &:hover
+                background-color: white
+                color: $main-color

@@ -1,0 +1,77 @@
+.new-task
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    width: 353px
+    height: 221px
+    background: white
+    box-shadow: 0px 2px 5px rgba(104, 129, 159, 0.34)
+    border-radius: 6px
+    .add-new
+        width: 20px
+        height: 20px
+        font-size: 20px
+        display: flex
+        align-items: center
+    &__title
+        font: 400 16px $main-font
+        color: $second-color
+
+.my-modal
+    background: rgba(30, 30, 30, 0.5)
+    .modal-dialog
+        margin-top: 18.4rem
+        .m-content
+            width: 46rem           
+            .m-header
+                padding: 2rem 3rem
+                .m-title
+                    font: 400 20px $main-font
+                    color: #2C405A
+                .close
+                    span 
+                        font-size: 16px
+            .m-body
+                padding: 2rem 3rem
+                &__title
+                    font: 400 15px $main-font
+                    color: #2C405A
+                .m-body__input
+                    width: 100%
+                    font: 400 15px $main-font
+                    color: $main-color
+                    line-height: 21px
+                    padding: 1rem 1.5rem
+                    border: 1px solid #A8C6DF
+                    border-right: 0
+                    border-radius: 4px
+            .m-footer
+                padding: 2rem 3rem
+                display: flex
+                justify-content: center
+                .m-btn
+                    margin: 0 5px
+                    padding: 12px 27px
+                    border: 1px solid $main-color
+                    box-sizing: border-box
+                    border-radius: 5px
+                    font: 400 13px $main-font
+                    transition: all 0.4s 
+                .no
+                    background-color: white
+                    color: $main-color
+                    &:hover
+                        background-color: $main-color
+                        color: white
+                .yes
+                    background-color: $main-color
+                    color: white
+                    &:hover
+                        background-color: white
+                        color: $main-color
+
+
+@media (max-width: 420px)
+    .new-task
+        width: 100%
