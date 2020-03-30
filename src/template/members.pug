@@ -1,0 +1,98 @@
+extends ../template_includes/head
+
+block unique-content
+    include ../template_includes/navbar
+    main.main.d-flex
+        include ../template_includes/left
+        .content
+            .breadCrumb.my-5
+                a.breadCrumb-link(href="#") Dashboard
+                img.mx-3(src="./img/icons/next/w.svg")
+                a.breadCrumb-link.breadCrumb-link--passive Üzvlər   
+            .members-wrapper
+                .members-item
+                    .members-item__header
+                        .title Aktiv üzvlər
+                        i.fa.fa-chevron-right.icon
+                    .members-item__body 
+                        table.table.table-responsive
+                            tr 
+                                td.table-title AD, SOYAD
+                                td.table-title VƏZİFƏ
+                                td.table-title LAYİHƏ SAYI
+                                td.table-title ORTALAMA
+                                td
+                            tr.members-row
+                                td.img-name
+                                    img(src="./img/account-img.jpg")
+                                    span Bertie Armstrong
+                                td.duty Developer
+                                td.project-number 7
+                                td.rating 4/5
+                                    img(src="./img/icons/half.svg")
+                                td 
+                                    a(href="#")
+                                        img(src="./img/icons/chat/blue.svg")
+                            tr.members-row
+                                td.img-name
+                                    img(src="./img/account-img.jpg")
+                                    span Bertie Armstrong
+                                td.duty Developer
+                                td.project-number 7
+                                td.rating 4/5
+                                    img(src="./img/icons/half.svg")
+                                td 
+                                    a(href="#")
+                                        img(src="./img/icons/chat/blue.svg")
+                            tr.members-row
+                                td.img-name
+                                    img(src="./img/account-img.jpg")
+                                    span Bertie Armstrong
+                                td.duty Developer
+                                td.project-number 7
+                                td.rating 4/5
+                                    img(src="./img/icons/half.svg")
+                                td 
+                                    a(href="#")
+                                        img(src="./img/icons/chat/blue.svg")
+
+                .members-item
+                    .members-item__header
+                        .title Deaktiv üzvlər
+                        i.fa.fa-chevron-right.icon
+                    .members-item__body
+                        table.table.table-responsive
+                            tr 
+                                td.table-title AD, SOYAD
+                                td.table-title VƏZİFƏ
+                                td.table-title LAYİHƏ SAYI
+                                td.table-title ORTALAMA
+                                td
+                            tr.members-row
+                                td.img-name
+                                    img(src="./img/account-img.jpg")
+                                    span Bertie Armstrong
+                                td.duty Developer
+                                td.project-number 7
+                                td.rating 4/5
+                                    img(src="./img/icons/half.svg")
+                                td 
+
+                            tr.members-row
+                                td.img-name
+                                    img(src="./img/account-img.jpg")
+                                    span Bertie Armstrong
+                                td.duty Developer
+                                td.project-number 7
+                                td.rating 4/5
+                                    img(src="./img/icons/half.svg")
+                                td 
+                            tr.members-row
+                                td.img-name
+                                    img(src="./img/account-img.jpg")
+                                    span Bertie Armstrong
+                                td.duty Developer
+                                td.project-number 7
+                                td.rating 4/5
+                                    img(src="./img/icons/half.svg")
+                                td 

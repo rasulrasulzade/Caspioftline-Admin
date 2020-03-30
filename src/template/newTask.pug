@@ -3,26 +3,7 @@ extends ../template_includes/head
 block unique-content
     include ../template_includes/navbar
     main.main.d-flex
-        .left
-            .left-nv.table-responsive
-                a.left-nv-link(href="#")
-                    img.mx-4(src="./img/icons/dashboard.svg")
-                    span.text-nowrap Dashboard
-                a.left-nv-link(href="#")
-                    img.mx-4(src="./img/icons/worksheet.svg")
-                    span.text-nowrap Layihələr
-                a.left-nv-link(href="#")
-                    img.mx-4(src="./img/icons/workers.svg")
-                    span.text-nowrap Üzvləri
-                a.left-nv-link(href="#")
-                    img.mx-4(src="./img/icons/candidates.svg")
-                    span.text-nowrap Namizədlər
-                a.left-nv-link(href="#")
-                    img.mx-4(src="./img/icons/chat/blue.svg")
-                    span.text-nowrap Mesajlar
-                a.left-nv-link(href="#")
-                    img.mx-4(src="./img/icons/tabel.svg")
-                    span.text-nowrap Admin 
+        include ../template_includes/left
         .content
             .breadCrumb.my-5
                 a.breadCrumb-link(href="#") Dashboard

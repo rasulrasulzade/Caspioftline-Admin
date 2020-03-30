@@ -3,26 +3,7 @@ extends ../template_includes/head
 block unique-content
     include ../template_includes/navbar
     main.main.d-flex
-        .left
-            .left-nv.table-responsive
-                a.left-nv-link(href="#")
-                    img.mx-4(src="./img/icons/dashboard.svg")
-                    span.text-nowrap Dashboard
-                a.left-nv-link(href="#")
-                    img.mx-4(src="./img/icons/worksheet.svg")
-                    span.text-nowrap Layihələr
-                a.left-nv-link(href="#")
-                    img.mx-4(src="./img/icons/workers.svg")
-                    span.text-nowrap Üzvləri
-                a.left-nv-link(href="#")
-                    img.mx-4(src="./img/icons/candidates.svg")
-                    span.text-nowrap Namizədlər
-                a.left-nv-link(href="#")
-                    img.mx-4(src="./img/icons/chat/blue.svg")
-                    span.text-nowrap Mesajlar
-                a.left-nv-link(href="#")
-                    img.mx-4(src="./img/icons/tabel.svg")
-                    span.text-nowrap Admin 
+        include ../template_includes/left
         .content
             .breadCrumb.my-5
                 a.breadCrumb-link(href="#") Dashboard
@@ -35,6 +16,27 @@ block unique-content
                     .project-title Improve the Useability and Configuration of Payment Provider to Imrove Checkout
                     .project-date 14 Oct 2019
                 .waiting-project__body
+                    .row.m-0
+                        .col-md-4.waiting-project-item
+                            img.mr-4(src="./img/icons/person/gray.svg")
+                            .waiting-project-info
+                                span Ad və soyadı
+                                .text from Dexter Clark
+                        .col-md-4.waiting-project-item
+                            img.mr-4(src="./img/icons/mail/blue.svg")
+                            .waiting-project-info
+                                span E-poçt ünvanı
+                                a.z-link(href="mailto:dexterclark@gmail.com") dexterclark@gmail.com
+                        .col-md-4.waiting-project-item
+                            img.mr-4(src="./img/icons/phone/blue.svg")
+                            .waiting-project-info
+                                span Mobil nömrəsi
+                                a.z-link(href="tel:+994505552211") +994505552211
+                    .sent-idea
+                        .sent-idea__title Göndərilən ideya
+                        .sent-idea__text
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum, enim id sodales tincidunt, ipsum risus porttitor augue, eu consectetur est felis at ex. Maecenas vitae mi vel augue pretium elementum et ac nisl. Pellentesque at enim iaculis, luctus ante eu, tristique ligula. Sed lacus augue, dignissim malesuada lectus rhoncus, sodales cursus odio. Donec molestie fringilla diam ut rutrum. Fusce pellentesque tortor nec mi lacinia, eget gravida turpis tincidunt. In hac habitasse platea dictumst. 
+                            | Phasellus nisl lacus, condimentum at molestie eget, lobortis at neque.
                 .waiting-project__footer
                     button.btn.waiting-btn.del(type="button") Sil
                     button.btn.waiting-btn.add(type="button") Baxılanlara əlavə et
