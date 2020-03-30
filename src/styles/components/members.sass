@@ -10,7 +10,7 @@
             cursor: pointer
             .title 
                 font: 400 20px $main-font
-                color: $main-color
+                color: #68819F
             .icon
                 font-size: 15px
                 color: $main-color
@@ -22,7 +22,7 @@
             .table
                 td
                     border-top: 0!important  
-                    padding: 2rem
+                    padding: 2rem                 
                 .members-row
                     transition: 0.4s ease
                     &:hover
@@ -62,5 +62,7 @@
 
 .accordion-item--active
     .members-item__header
+        .title
+            color: $main-color
         .icon
             transform: rotate(90deg)

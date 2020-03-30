@@ -19,7 +19,6 @@ const membersAccordion = () => {
       acc[i].addEventListener("click", function() { 
         closeOthers(this)
         console.log(this)
-        // this.classList.toggle("active");
         var panel = this.nextElementSibling;
          if (panel.style.maxHeight) {
           panel.style.maxHeight = null;

@@ -1,0 +1,49 @@
+.candidate
+    transition: 0.4s ease
+    &:hover
+        background-color: #F0F3F6
+    .img-name
+        width: 37.3rem
+        display: flex
+        align-items: center
+        img
+            width: 27px
+            height: 27px
+            border-radius: 1px 
+            margin-right: 1rem
+        span 
+            font: 400 15px $main-font
+            color: $content-black   
+    .duty
+        width: 37.3rem
+        font: 400 15px $main-font
+        color: #68819F
+    .options
+        position: relative
+        width: 37.4rem
+        display: flex
+        justify-content: flex-end
+        button
+            cursor: pointer
+            background: transparent
+            border: 0
+            outline: 0           
+            img 
+                transform: rotate(90deg)
+            &:focus + .option-types
+                display: flex          
+        .option-types
+            display: none
+            flex-direction: column
+            position: absolute
+            top: 25px
+            background-color: white
+            box-shadow: 0px 2px 4px rgba(104, 129, 159, 0.3)
+            border: 1px solid #E9EFF4
+            border-radius: 3px  
+            z-index: 2        
+            .option-link
+                font: 400 14px $main-font
+                color: #68819F
+                padding: 2rem
+                      

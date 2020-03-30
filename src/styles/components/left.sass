@@ -1,0 +1,28 @@
+.left
+    display: flex
+    align-items: center
+    flex-direction: column
+    width: 180px
+    height: calc(100% - 80px)
+
+.left-nv
+    width: 100%
+    display: flex
+    flex-direction: column
+    .left-nv-link
+        display: flex
+        align-items: center
+        font: 400 14px $main-font
+        color: $main-color
+        padding: 1rem
+        padding-left: 1.5rem
+        &:hover
+            background-color: $content-bg
+
+@media (max-width: 768px)        
+    .left
+        width: 100%
+        padding: 0 3rem
+        .left-nv
+            flex-direction: row
+            padding-bottom: 3rem
