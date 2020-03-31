@@ -1,11 +1,55 @@
+
+
+.candidates-item
+    background-color: white
+    margin-bottom: 2rem
+    box-shadow: 0px 2px 5px rgba(104, 129, 159, 0.34)
+    &__header
+        display: flex
+        justify-content: space-between
+        padding: 2rem
+        cursor: pointer
+        .title 
+            font: 400 20px $main-font
+            color: #68819F
+        .icon
+            font-size: 15px
+            color: $main-color
+            transition: 0.4s ease
+    &__body
+        max-height: 0
+        overflow: hidden
+        transition: 0.4s ease
+
+                      
+
+.candidates-item--active
+    .candidates-item__header
+        .title
+            color: $main-color
+        .icon
+            transform: rotate(90deg)
+
+
+.candidate.header
+    background-color: white!important
 .candidate
+    display: flex
+    flex-direction: row
+    min-width: 500px
+    border: 1px solid #F2F2F2
     transition: 0.4s ease
     &:hover
         background-color: #F0F3F6
-    .img-name
-        width: 37.3rem
+    .elem
         display: flex
         align-items: center
+        font: 400 15px $main-font
+        color: #68819F
+        padding: 2rem
+        width: 35%
+        height: 6.4rem
+    .img-name
         img
             width: 27px
             height: 27px
@@ -13,16 +57,13 @@
             margin-right: 1rem
         span 
             font: 400 15px $main-font
-            color: $content-black   
-    .duty
-        width: 37.3rem
-        font: 400 15px $main-font
-        color: #68819F
-    .options
+            color: $content-black 
+    .rating
+        width: 20%
+    .icon
         position: relative
-        width: 37.4rem
-        display: flex
-        justify-content: flex-end
+        width: 10%
+        justify-content: flex-end 
         button
             cursor: pointer
             background: transparent
@@ -33,6 +74,7 @@
             &:focus + .option-types
                 display: flex          
         .option-types
+            width: 16.2rem
             display: none
             flex-direction: column
             position: absolute
@@ -46,4 +88,9 @@
                 font: 400 14px $main-font
                 color: #68819F
                 padding: 2rem
-                      
+        
+
+@media (max-width: 768px)
+    .candidates-content
+        padding-left: 1rem
+        padding-right: 1rem 

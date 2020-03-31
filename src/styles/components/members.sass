@@ -1,68 +1,74 @@
-.members-wrapper
-    .members-item
-        background-color: white
-        margin-bottom: 2rem
-        box-shadow: 0px 2px 5px rgba(104, 129, 159, 0.34)
-        &__header
-            display: flex
-            justify-content: space-between
-            padding: 2rem
-            cursor: pointer
-            .title 
-                font: 400 20px $main-font
-                color: #68819F
-            .icon
-                font-size: 15px
-                color: $main-color
-                transition: 0.4s ease
-        &__body 
-            max-height: 0
-            overflow: hidden
-            transition: 0.4s ease
-            .table
-                td
-                    border-top: 0!important  
-                    padding: 2rem                 
-                .members-row
-                    transition: 0.4s ease
-                    &:hover
-                        background-color: #F0F3F6
-                    .img-name
-                        width: 38rem
-                        display: flex
-                        align-items: center
-                        img
-                            width: 27px
-                            height: 27px
-                            border-radius: 1px 
-                            margin-right: 1rem
-                        span 
-                            font: 400 15px $main-font
-                            color: $content-black   
-                    .duty
-                        width: 25rem
-                        font: 400 15px $main-font
-                        color: #68819F
-                    .project-number
-                        width: 25rem
-                        font: 400 15px $main-font
-                        color: #68819F
-                    .rating
-                        width: 25rem
-                        font: 400 15px $main-font
-                        color: #68819F
-                        img
-                            margin-top: -5px
-                            margin-left: 0.8rem
 
 
-.table-title
-    font: 400 15px $main-font
-    color: #68819F
-
-.accordion-item--active
-    .members-item__header
-        .title
+.members-item
+    background-color: white
+    margin-bottom: 2rem
+    box-shadow: 0px 2px 5px rgba(104, 129, 159, 0.34)
+    &__header
+        display: flex
+        justify-content: space-between
+        padding: 2rem
+        cursor: pointer
+        .title 
+            font: 400 20px $main-font
             color: $main-color
-        .icon
-            transform: rotate(90deg)
+    &__body
+        // max-height: 0
+        // overflow: hidden
+        // transition: 0.4s ease
+
+                      
+
+
+
+.member.header
+    background-color: white!important
+.member
+    display: flex
+    flex-direction: row
+    min-width: 500px
+    border: 1px solid #F2F2F2
+    transition: 0.4s ease
+    &:hover
+        background-color: #F0F3F6
+    .el
+        display: flex
+        align-items: center
+        font: 400 15px $main-font
+        color: #68819F
+        padding: 2rem
+        height: 6.4rem
+    .img-name
+        width: 25%
+        img
+            width: 27px
+            height: 27px
+            border-radius: 1px 
+            margin-right: 1rem
+        span 
+            font: 400 15px $main-font
+            color: $content-black 
+    .duty
+        width: 25%
+    .project-number
+        width: 25%
+    .rating
+        width: 18%
+        img
+            margin-left: 8px
+    .icon
+        position: relative
+        width: 7%
+        justify-content: flex-end 
+        button
+            cursor: pointer
+            background: transparent
+            border: 0
+            outline: 0           
+
+        
+
+@media (max-width: 768px)
+    .members-content
+        padding-left: 1rem
+        padding-right: 1rem 

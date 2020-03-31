@@ -4,28 +4,30 @@ block unique-content
     include ../template_includes/navbar
     main.main.d-flex
         include ../template_includes/left
-        .content
+        .content.candidates-content
             .breadCrumb.my-5
                 a.breadCrumb-link(href="#") Dashboard
                 img.mx-3(src="./img/icons/next/w.svg")
-                a.breadCrumb-link.breadCrumb-link--passive Üzvlər   
-            .members-wrapper
-                .members-item
-                    .members-item__header
+                a.breadCrumb-link.breadCrumb-link--passive Namizədlər
+            .candidates-wrapper.container.p-0
+                .candidates-item
+                    .candidates-item__header
                         .title Təsdiq gözləyənlər
                         i.fa.fa-chevron-right.icon
-                    .members-item__body 
-                        table.table.table-responsive
-                            tr 
-                                td.table-title AD, SOYAD
-                                td.table-title VƏZİFƏ
-                                td
-                            tr.candidate
-                                td.img-name
+                    .candidates-item__body
+                        .table-responsive
+                            .candidate.header
+                                .elem.img-name AD, SOYAD
+                                .elem.duty VƏZİFƏ
+                                .elem.rating TEST ORTALAMASI
+                                .elem.icon
+                            .candidate
+                                .elem.img-name
                                     img(src="./img/account-img.jpg")
                                     span Bertie Armstrong
-                                td.duty Developer
-                                td.options
+                                .elem.duty Developer
+                                .elem.rating 4/5
+                                .elem.icon
                                     button
                                         img(src="./img/icons/select-menu/darkblue.svg")
                                     .option-types
@@ -33,12 +35,13 @@ block unique-content
                                         a.option-link(href="#") CV-ni görüntülə
                                         a.option-link(href="#") Gələnlərə qaytar
                                         a.option-link(href="#") Sil
-                            tr.candidate
-                                td.img-name
+                            .candidate
+                                .elem.img-name
                                     img(src="./img/account-img.jpg")
                                     span Bertie Armstrong
-                                td.duty Developer
-                                td.options 
+                                .elem.duty Developer
+                                .elem.rating 4/5
+                                .elem.icon
                                     button
                                         img(src="./img/icons/select-menu/darkblue.svg")
                                     .option-types
@@ -46,12 +49,13 @@ block unique-content
                                         a.option-link(href="#") CV-ni görüntülə
                                         a.option-link(href="#") Gələnlərə qaytar
                                         a.option-link(href="#") Sil
-                            tr.candidate
-                                td.img-name
+                            .candidate
+                                .elem.img-name
                                     img(src="./img/account-img.jpg")
                                     span Bertie Armstrong
-                                td.duty Developer
-                                td.options 
+                                .elem.duty Developer
+                                .elem.rating 4/5
+                                .elem.icon
                                     button
                                         img(src="./img/icons/select-menu/darkblue.svg")
                                     .option-types
@@ -59,23 +63,24 @@ block unique-content
                                         a.option-link(href="#") CV-ni görüntülə
                                         a.option-link(href="#") Gələnlərə qaytar
                                         a.option-link(href="#") Sil
-
-                .members-item
-                    .members-item__header
+                .candidates-item
+                    .candidates-item__header
                         .title Gələn CV-lər
                         i.fa.fa-chevron-right.icon
-                    .members-item__body 
-                        table.table.table-responsive
-                            tr 
-                                td.table-title AD, SOYAD
-                                td.table-title VƏZİFƏ
-                                td
-                            tr.candidate
-                                td.img-name
+                    .candidates-item__body
+                        .table-responsive
+                            .candidate.header
+                                .elem.img-name AD, SOYAD
+                                .elem.duty VƏZİFƏ
+                                .elem.rating TEST ORTALAMASI
+                                .elem.icon
+                            .candidate
+                                .elem.img-name
                                     img(src="./img/account-img.jpg")
                                     span Bertie Armstrong
-                                td.duty Developer
-                                td.options
+                                .elem.duty Developer
+                                .elem.rating 4/5
+                                .elem.icon
                                     button
                                         img(src="./img/icons/select-menu/darkblue.svg")
                                     .option-types
@@ -83,12 +88,13 @@ block unique-content
                                         a.option-link(href="#") CV-ni görüntülə
                                         a.option-link(href="#") Gələnlərə qaytar
                                         a.option-link(href="#") Sil
-                            tr.candidate
-                                td.img-name
+                            .candidate
+                                .elem.img-name
                                     img(src="./img/account-img.jpg")
                                     span Bertie Armstrong
-                                td.duty Developer
-                                td.options 
+                                .elem.duty Developer
+                                .elem.rating 4/5
+                                .elem.icon
                                     button
                                         img(src="./img/icons/select-menu/darkblue.svg")
                                     .option-types
@@ -96,12 +102,13 @@ block unique-content
                                         a.option-link(href="#") CV-ni görüntülə
                                         a.option-link(href="#") Gələnlərə qaytar
                                         a.option-link(href="#") Sil
-                            tr.candidate
-                                td.img-name
+                            .candidate
+                                .elem.img-name
                                     img(src="./img/account-img.jpg")
                                     span Bertie Armstrong
-                                td.duty Developer
-                                td.options 
+                                .elem.duty Developer
+                                .elem.rating 4/5
+                                .elem.icon
                                     button
                                         img(src="./img/icons/select-menu/darkblue.svg")
                                     .option-types
@@ -109,3 +116,4 @@ block unique-content
                                         a.option-link(href="#") CV-ni görüntülə
                                         a.option-link(href="#") Gələnlərə qaytar
                                         a.option-link(href="#") Sil
+                                        

@@ -1,0 +1,79 @@
+extends ../template_includes/head
+
+block unique-content
+    include ../template_includes/navbar
+    main.main.d-flex
+        include ../template_includes/left
+        .content.archive-content
+            .breadCrumb.my-5
+                a.breadCrumb-link(href="#") Dashboard
+                img.mx-3(src="./img/icons/next/w.svg")
+                a.breadCrumb-link.breadCrumb-link--passive Arxiv 
+            .archive-wrapper
+                .archive-item
+                    .archive-item__header
+                        .title Uğurlu layihələr
+                        i.fa.fa-chevron-right.icon
+                    .archive-item__body 
+                        ul.project-list
+                            li 
+                                a.project-link(href="#") SA Project
+                            li 
+                                a.project-link(href="#") NBA Project
+                            li 
+                                a.project-link(href="#") Zuffa Webiste Project
+                            li 
+                                a.project-link(href="#") Sit Amet Project
+                .archive-item
+                    .archive-item__header
+                        .title Uğursuz layihələr
+                        i.fa.fa-chevron-right.icon
+                    .archive-item__body 
+                        ul.project-list
+                            li 
+                                a.project-link(href="#") SA Project
+                            li 
+                                a.project-link(href="#") NBA Project
+                            li 
+                                a.project-link(href="#") Zuffa Webiste Project
+                            li 
+                                a.project-link(href="#") Sit Amet Project
+                .archive-item
+                    .archive-item__header
+                        .title Deaktiv üzvlər
+                        i.fa.fa-chevron-right.icon
+                    .archive-item__body 
+                        .table-responsive
+                            .member.header
+                                .el.img-name AD, SOYAD
+                                .el.duty VƏZİFƏ
+                                .el.project-number  LAYİHƏ SAYI
+                                .el.rating ORTALAMA
+                                .el.icon
+                            .member
+                                .el.img-name
+                                    img(src="./img/account-img.jpg")
+                                    span Bertie Armstrong
+                                .el.duty Developer
+                                .el.project-number 7
+                                .el.rating 4/5
+                                    img(src="./img/icons/half.svg")
+                                .el.icon
+                            .member
+                                .el.img-name
+                                    img(src="./img/account-img.jpg")
+                                    span Bertie Armstrong
+                                .el.duty Developer
+                                .el.project-number 7
+                                .el.rating 4/5
+                                    img(src="./img/icons/half.svg")
+                                .el.icon
+                            .member
+                                .el.img-name
+                                    img(src="./img/account-img.jpg")
+                                    span Bertie Armstrong
+                                .el.duty Developer
+                                .el.project-number 7
+                                .el.rating 4/5
+                                    img(src="./img/icons/half.svg")
+                                .el.icon

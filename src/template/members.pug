@@ -4,7 +4,7 @@ block unique-content
     include ../template_includes/navbar
     main.main.d-flex
         include ../template_includes/left
-        .content
+        .content.members-content
             .breadCrumb.my-5
                 a.breadCrumb-link(href="#") Dashboard
                 img.mx-3(src="./img/icons/next/w.svg")
@@ -12,87 +12,45 @@ block unique-content
             .members-wrapper
                 .members-item
                     .members-item__header
-                        .title Aktiv üzvlər
-                        i.fa.fa-chevron-right.icon
+                        .title Üzvlər
                     .members-item__body 
-                        table.table.table-responsive
-                            tr 
-                                td.table-title AD, SOYAD
-                                td.table-title VƏZİFƏ
-                                td.table-title LAYİHƏ SAYI
-                                td.table-title ORTALAMA
-                                td
-                            tr.members-row
-                                td.img-name
+                        .table-responsive
+                            .member.header
+                                .el.img-name AD, SOYAD
+                                .el.duty VƏZİFƏ
+                                .el.project-number  LAYİHƏ SAYI
+                                .el.rating ORTALAMA
+                                .el.icon
+                            .member
+                                .el.img-name
                                     img(src="./img/account-img.jpg")
                                     span Bertie Armstrong
-                                td.duty Developer
-                                td.project-number 7
-                                td.rating 4/5
+                                .el.duty Developer
+                                .el.project-number 7
+                                .el.rating 4/5
                                     img(src="./img/icons/half.svg")
-                                td 
-                                    a(href="#")
+                                .el.icon
+                                    button.msg-btn
                                         img(src="./img/icons/chat/blue.svg")
-                            tr.members-row
-                                td.img-name
+                            .member
+                                .el.img-name
                                     img(src="./img/account-img.jpg")
                                     span Bertie Armstrong
-                                td.duty Developer
-                                td.project-number 7
-                                td.rating 4/5
+                                .el.duty Developer
+                                .el.project-number 7
+                                .el.rating 4/5
                                     img(src="./img/icons/half.svg")
-                                td 
-                                    a(href="#")
+                                .el.icon
+                                    button.msg-btn
                                         img(src="./img/icons/chat/blue.svg")
-                            tr.members-row
-                                td.img-name
+                            .member
+                                .el.img-name
                                     img(src="./img/account-img.jpg")
                                     span Bertie Armstrong
-                                td.duty Developer
-                                td.project-number 7
-                                td.rating 4/5
+                                .el.duty Developer
+                                .el.project-number 7
+                                .el.rating 4/5
                                     img(src="./img/icons/half.svg")
-                                td 
-                                    a(href="#")
+                                .el.icon
+                                    button.msg-btn
                                         img(src="./img/icons/chat/blue.svg")
-
-                .members-item
-                    .members-item__header
-                        .title Deaktiv üzvlər
-                        i.fa.fa-chevron-right.icon
-                    .members-item__body
-                        table.table.table-responsive
-                            tr 
-                                td.table-title AD, SOYAD
-                                td.table-title VƏZİFƏ
-                                td.table-title LAYİHƏ SAYI
-                                td.table-title ORTALAMA
-                                td
-                            tr.members-row
-                                td.img-name
-                                    img(src="./img/account-img.jpg")
-                                    span Bertie Armstrong
-                                td.duty Developer
-                                td.project-number 7
-                                td.rating 4/5
-                                    img(src="./img/icons/half.svg")
-                                td 
-
-                            tr.members-row
-                                td.img-name
-                                    img(src="./img/account-img.jpg")
-                                    span Bertie Armstrong
-                                td.duty Developer
-                                td.project-number 7
-                                td.rating 4/5
-                                    img(src="./img/icons/half.svg")
-                                td 
-                            tr.members-row
-                                td.img-name
-                                    img(src="./img/account-img.jpg")
-                                    span Bertie Armstrong
-                                td.duty Developer
-                                td.project-number 7
-                                td.rating 4/5
-                                    img(src="./img/icons/half.svg")
-                                td 
