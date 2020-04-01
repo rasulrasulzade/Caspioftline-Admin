@@ -1,0 +1,38 @@
+extends ../template_includes/head
+
+block unique-content
+    include ../template_includes/navbar
+    main.main.d-flex
+        include ../template_includes/left
+        .content
+            .breadCrumb.my-5
+                a.breadCrumb-link(href="#") Dashboard
+                img.mx-3(src="./img/icons/next/w.svg")
+                a.breadCrumb-link.breadCrumb-link--passive Hesabım
+            .account-content
+                .row.m-0.acc-top
+                    .col-md-3.acc-img
+                        img(src="./img/account-img.jpg")
+                    .col-md-9.acc-name-duty
+                        ul.myList
+                            li.el.mb-5
+                                .title.mb-3 Ad və soyad
+                                input.tab-input.px-4.py-3(type="text")
+                            li.el.mb-5
+                                .title.mb-3 Vəzifə
+                                input.tab-input.px-4.py-3(type="text")
+                .acc-title.mb-5 İnformasiya
+                ul.myList.m-0.px-5.acc-info-list
+                    li.el.mb-5
+                        .title.mb-3 Doğum tarixi
+                        input.tab-input.px-4.py-3(type="text")
+                    li.el.mb-5
+                        .title.mb-3 Cins
+                        input.tab-input.px-4.py-3(type="text")
+                    li.el.mb-5
+                        .title.mb-3 E-poçt
+                        input.tab-input.px-4.py-3(type="text")
+                ul.myList.m-0.p-5.acc-info-list
+                    li.el.mb-5
+                        .title.mb-3 Doğum tarixi
+                        input.tab-input.px-4.py-3(type="text")

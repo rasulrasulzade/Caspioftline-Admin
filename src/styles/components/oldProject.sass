@@ -1,0 +1,140 @@
+.about-project
+    .elm.brdr-rg
+        border-right: 2px solid #F0F3F6
+    .elm
+        padding: 2rem
+        &__header
+            font: 400 20px $main-font
+            color: $main-color
+            margin-bottom: 3.8rem
+        &__body
+            .elm-row 
+                display: flex
+                justify-content: space-between
+                margin-bottom: 2rem
+                .title 
+                    font: 400 15px $main-font
+                    color: $content-black
+                .data
+                    font: 400 15px $main-font
+                    color: #68819F
+                .link
+                    font: 400 15px $main-font
+                    color: $second-color
+
+.project-team
+    .title
+        font: 400 20px $main-font
+        color: $main-color
+        padding: 2rem
+    .project-team-list
+        .project-team-member
+            border-bottom: 2px solid #F0F3F6         
+            &__header
+                height: 6.4rem
+                display: flex
+                align-items: center
+                justify-content: space-between
+                padding: 2rem
+                cursor: pointer
+                &:hover
+                    background-color: #F0F3F6
+                .img-name
+                    display: flex
+                    align-items: center
+                    img
+                        width: 27px
+                        height: 27px
+                        margin-right: 1rem
+                    .name
+                        font: 400 15px $main-font
+                        color: $content-black
+                .duty
+                    font: 400 15px $main-font
+                    color: $second-color
+            &__body
+                max-height: 0
+                overflow: hidden
+                transition: 0.4s ease
+                .name-rating
+                    display: flex
+                    align-items: center
+                    padding: 2rem
+                    .name
+                        font: 400 15px $main-font
+                        color: $main-color
+                        border-right:  1px solid $main-color
+                        padding-right: 2rem
+                    .rating
+                        padding-left: 2rem
+                        display: flex
+                        align-items: center
+                        .val
+                            margin-left: 1rem
+                            font: 400 15px $main-font
+                            color: #68819F
+                .text
+                    font: 400 15px $main-font
+                    color: #68819F
+                    line-height: 21px
+                    padding: 2rem
+
+
+.project-team-member--active
+   .project-team-member__header
+       background-color: #F0F3F6
+
+
+
+.client-comment
+    box-shadow: 0px 1px 6px rgba(104, 129, 159, 0.3)
+    padding: 2rem
+    .header
+       font: 400 20px $main-font
+       color: $main-color
+       margin-bottom: 2rem
+    .info
+        display: flex
+        align-items: center
+        min-width: 426px
+        .name
+            font: 400 15px $main-font
+            color: $main-color
+            padding-right: 2rem
+            border-right: 1px solid $main-color
+        .project-name
+            font: 400 15px $main-font
+            color: $main-color
+            padding-left: 2rem
+            padding-right: 2rem
+            border-right: 1px solid $main-color
+        .rating
+            display: flex
+            padding-left: 2rem
+            padding-right: 2rem
+            border-right: 1px solid $main-color
+            .val
+                margin-left: 1rem
+                font: 400 15px $main-font
+                color: #68819F
+        .result
+            padding-left: 2rem
+            padding-right: 2rem
+            font: 400 15px $main-font
+            color: #68819F
+            img
+                width: 19px
+                height: 14px
+                margin-right: 1rem
+    .text
+        font: 400 15px $main-font
+        color: #68819F
+        line-height: 21px
+
+
+@media (max-width: 992px)
+    .about-project
+    .elm
+        &__body
+            .elm-row 
+                flex-direction: column

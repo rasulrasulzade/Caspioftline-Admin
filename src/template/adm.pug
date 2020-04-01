@@ -1,0 +1,155 @@
+extends ../template_includes/head
+
+block unique-content
+    include ../template_includes/navbar
+    main.main.d-flex
+        include ../template_includes/left
+        .content
+            .breadCrumb.my-5
+                a.breadCrumb-link(href="#") Dashboard
+                img.mx-3(src="./img/icons/next/w.svg")
+                a.breadCrumb-link.breadCrumb-link--passive Admin
+            .pages-tab
+                ul#myTab.nav.nav-tabs.tab-header(role='tablist')
+                    li.nav-item
+                        a#home-tab.nav-link.tab-link.active(data-toggle='tab', href='#home', role='tab', aria-controls='home', aria-selected='true') Main page
+                    li.nav-item
+                        a#about-tab.nav-link.tab-link(data-toggle='tab', href='#about', role='tab', aria-controls='about', aria-selected='false') About us
+                    li.nav-item
+                        a#portfolio-tab.nav-link.tab-link(data-toggle='tab', href='#portfolio', role='tab', aria-controls='portfolio', aria-selected='false') Portfolio
+                    li.nav-item
+                        a#careers-tab.nav-link.tab-link(data-toggle='tab', href='#careers', role='tab', aria-controls='careers', aria-selected='false') Careers
+                    li.nav-item
+                        a#faq-tab.nav-link.tab-link(data-toggle='tab', href='#faq', role='tab', aria-controls='faq', aria-selected='false') FAQ
+                #myTabContent.tab-content.tab-inhalt
+                    #home.tab-pane.fade.show.active(role='tabpanel', aria-labelledby='home-tab') 
+                       ul.myList
+                        li.el
+                            .title.mb-3 First slogan (up)
+                            input.tab-input.px-4.py-3(type="text")
+                        li.el
+                            .title.mb-3 First slogan
+                            input.tab-input.px-4.py-3(type="text")
+                        li.el
+                            .title.mb-3 About's slogan
+                            input.tab-input.px-4.py-3(type="text")
+                        li.el
+                            .title.mb-3 About's slogan (down)
+                            input.tab-input.px-4.py-3(type="text")
+                        li.el
+                            .title.mb-3 Portfolio's slogan
+                            input.tab-input.px-4.py-3(type="text")
+                        li.el
+                            .title.mb-3 Careers's slogan
+                            input.tab-input.px-4.py-3(type="text")
+                        li.el
+                            .title.mb-3 FIND OUT WHO WE ARE (footer)
+                            input.tab-input.px-4.py-3(type="text")
+                    #about.tab-pane.fade(role='tabpanel', aria-labelledby='about-tab')
+                        ul.myList
+                            li.el
+                                .title.mb-3 Slogan
+                                input.tab-input.px-4.py-3(type="text")
+                            li.el
+                                .title.mb-3 ABOUT OUR TEAM
+                                textarea(name="", cols="30", rows="5").tab-input.px-4.py-3                 
+                            li.el
+                                .title.mb-3 TEAM
+                                input.tab-input.px-4.py-3(type="text")
+                            li.el
+                                .title.mb-3 TEAM(down)
+                                input.tab-input.px-4.py-3(type="text")
+                        .row.m-0
+                            .col-md-4.mb-5.d-flex.align-items-center.justify-content-center.adm-about-img-wrapper
+                                img.adm-about-img(src="./img/account-img.jpg")
+                            .col-md-8
+                                ul.myList.tab-team-member
+                                    li.el
+                                        .title.mb-3 Komanda üzvü
+                                        input.tab-input.px-4.py-3(type="text")
+                                    li.el
+                                        .title.mb-3 Vəzifəsi
+                                        input.tab-input.px-4.py-3(type="text")
+                                ul.myList
+                                    li.el
+                                        .title.mb-3 Komanda üzvü
+                                        input.tab-input.px-4.py-3(type="text")
+                        ul.myList
+                            li.el
+                                .title.mb-3 PROCESS Title
+                                input.tab-input.px-4.py-3(type="text")
+                            li.el
+                                .title.mb-3 PROCESS Text
+                                textarea(name="", cols="30", rows="5").tab-input.px-4.py-3    
+                    #portfolio.tab-pane.fade(role='tabpanel', aria-labelledby='portfolio-tab')
+                        ul.myList
+                            li.el
+                                .title.mb-3 Portfolio
+                                input.tab-input.px-4.py-3(type="text")
+                        ul.myList.tab-portfolio-frame
+                            li.el
+                                .title.mb-3 Frame üçün link 
+                                input.tab-input.px-4.py-3(type="text")
+                            li.el
+                                .title.mb-3 Frame üçün kover
+                                input#tabFile1.tab-file(type="file", hidden="")
+                                label.tab-file-label.px-4.py-3(for="tabFile1") Upload Cover 
+                                    .file-name.px-4.py-3
+                                    img(src="./img/cloud_upload.png")
+                                .del-file
+                                    img(src="./img/icons/x/lightblue.svg")                          
+                        ul.myList.tab-portfolio-frame
+                            li.el
+                                .title.mb-3 Frame üçün link 
+                                input.tab-input.px-4.py-3(type="text")
+                            li.el
+                                .title.mb-3 Frame üçün kover
+                                input#tabFile2.tab-file(type="file", hidden="")
+                                label.tab-file-label.px-4.py-3(for="tabFile2") Upload Cover 
+                                    .file-name.px-4.py-3
+                                    img(src="./img/cloud_upload.png")
+                                .del-file
+                                    img(src="./img/icons/x/lightblue.svg") 
+                        ul.myList.tab-portfolio-frame
+                            li.el
+                                .title.mb-3 Frame üçün link 
+                                input.tab-input.px-4.py-3(type="text")
+                            li.el
+                                .title.mb-3 Frame üçün kover
+                                input#tabFile3.tab-file(type="file", hidden="")
+                                label.tab-file-label.px-4.py-3(for="tabFile3") Upload Cover 
+                                    .file-name.px-4.py-3 
+                                    img(src="./img/cloud_upload.png")
+                                .del-file
+                                    img(src="./img/icons/x/lightblue.svg")
+                    #careers.tab-pane.fade(role="tabpanel", aria-labelledby="careers-tab")
+                        ul.myList
+                            li.el
+                                .title.mb-3 Creers
+                                input.tab-input.px-4.py-3(type="text")
+                            li.el
+                                .title.mb-3 Vakansiya adı
+                                input.tab-input.px-4.py-3(type="text")
+                            li.el.d-flex
+                                .W-95                                    
+                                    .title.mb-3 Vakansiya haqqında
+                                    textarea(name="", cols="30", rows="5").tab-input.px-4.py-3
+                                button.btn.tab-add-icon 
+                                    i.fa.fa-plus-circle 
+                    #faq.tab-pane.fade(role="tabpanel", aria-labelledby="faq-tab")
+                        ul.myList
+                            li.el
+                                .title.mb-3 FAQ
+                                input.tab-input.px-4.py-3(type="text")
+                            li.el
+                                .title.mb-3 Question
+                                input.tab-input.px-4.py-3(type="text")
+                            li.el
+                                .title.mb-3 Sual 1
+                                input.tab-input.px-4.py-3(type="text")
+                            li.el.d-flex
+                                .W-95                               
+                                    .title.mb-3 Cavabı
+                                    textarea(name="", cols="30", rows="5").tab-input.px-4.py-3
+                                button.btn.tab-add-icon 
+                                    i.fa.fa-plus-circle 

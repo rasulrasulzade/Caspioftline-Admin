@@ -1,0 +1,145 @@
+extends ../template_includes/head
+
+block unique-content
+    include ../template_includes/navbar
+    main.main.d-flex
+        include ../template_includes/left
+        .content
+            .breadCrumb.my-5
+                a.breadCrumb-link(href="#") Dashboard
+                img.mx-3(src="./img/icons/next/w.svg")
+                a.breadCrumb-link(href="#") Arxiv
+                img.mx-3(src="./img/icons/next/w.svg")
+                a.breadCrumb-link.breadCrumb-link--passive Uğurlu Layihə - Improve the Useability and Configuration of Payment 
+            .waiting-project.w-100.n-shadow
+                .waiting-project__header
+                    .project-title Improve the Useability and Configuration of Payment Provider to Imrove Checkout
+                    .project-date 14 Oct 2019
+                .waiting-project__body
+                    .row.m-0
+                        .col-md-4.waiting-project-item
+                            img.mr-4(src="./img/icons/person/gray.svg")
+                            .waiting-project-info
+                                span Ad və soyadı
+                                .text from Dexter Clark
+                        .col-md-4.waiting-project-item
+                            img.mr-4(src="./img/icons/mail/blue.svg")
+                            .waiting-project-info
+                                span E-poçt ünvanı
+                                a.z-link(href="mailto:dexterclark@gmail.com") dexterclark@gmail.com
+                        .col-md-4.waiting-project-item
+                            img.mr-4(src="./img/icons/phone/blue.svg")
+                            .waiting-project-info
+                                span Mobil nömrəsi
+                                a.z-link(href="tel:+994505552211") +994505552211
+                    .sent-idea
+                        .sent-idea__title Göndərilən ideya
+                        .sent-idea__text
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fermentum, enim id sodales tincidunt, ipsum risus porttitor augue, eu consectetur est felis at ex. Maecenas vitae mi vel augue pretium elementum et ac nisl. Pellentesque at enim iaculis, luctus ante eu, tristique ligula. Sed lacus augue, dignissim malesuada lectus rhoncus, sodales cursus odio. Donec molestie fringilla diam ut rutrum. Fusce pellentesque tortor nec mi lacinia, eget gravida turpis tincidunt. In hac habitasse platea dictumst. 
+                            | Phasellus nisl lacus, condimentum at molestie eget, lobortis at neque.
+                    .row.m-0.about-project
+                        .col-md-6.elm.table-responsive.brdr-rg
+                            .elm__header Layihə haqda informasiya
+                            .elm__body
+                                .elm-row 
+                                    .title Başlanma tarixi
+                                    .data 28 January 2019
+                                .elm-row 
+                                    .title Bitmə tarixi
+                                    .data 28 January 2019
+                                .elm-row 
+                                    .title Toplam layihə ödənişi
+                                    .data 1000 $
+                                .elm-row 
+                                    .title Hazırlanmaya xərclənən ümumi ödəniş
+                                    .data 600 $
+                        .col-md-6.elm.table-responsive
+                            .elm__header Layihəyə aid linklər
+                            .elm__body
+                                .elm-row 
+                                    .title İctimai sayt
+                                    a.link(href="#") https://www.facebook.com/adoptionism664
+                                .elm-row 
+                                    .title Dizayn görünüşləri
+                                    a.link(href="#") https://www.dropbox.com/archive-design/
+                                .elm-row 
+                                    .title Front-kodları
+                                    a.link(href="#") https://www.behance.net/adopt-ionism744/
+                                .elm-row 
+                                    .title Back-kodları
+                                    a.link(href="#") https://www.behance.net/adopt-ionism744/
+                    .project-team.mb-5
+                        .title Layihə ilə məşğul olanlar
+                        ul.project-team-list
+                            li.project-team-member
+                                .project-team-member__header
+                                    .img-name 
+                                        img(src="./img/account-img.jpg")
+                                        .name Bertie Armstrong
+                                    .duty UX / UI Designer
+                                .project-team-member__body
+                                    .name-rating
+                                        .name Bertie Armstrong
+                                        .rating 
+                                            img(src="./img/icons/fill.svg")
+                                            img(src="./img/icons/fill.svg")
+                                            img(src="./img/icons/half.svg")
+                                            img(src="./img/icons/empty.svg")
+                                            .val 4/5
+                                    .text 
+                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, lectus id commodo pellentesque, orci ligula consequat elit, porta hendrerit sapien ipsum sit amet ante. Vestibulum tincidunt urna ut tellus faucibus, quis tincidunt eros blandit. Phasellus vulputate nisi id est sodales aliquet. In nec nibh et ante egestas posuere placerat sit amet ante. Proin feugiat tempor leo at lobortis. Nulla bibendum tincidunt velit, 
+                                        | vel eleifend felis vestibulum ut. Suspendisse dictum dui sit amet accumsan volutpat.
+                            li.project-team-member
+                                .project-team-member__header
+                                    .img-name 
+                                        img(src="./img/account-img.jpg")
+                                        .name Bertie Armstrong
+                                    .duty UX / UI Designer
+                                .project-team-member__body
+                                    .name-rating
+                                        .name Bertie Armstrong
+                                        .rating 
+                                            img(src="./img/icons/fill.svg")
+                                            img(src="./img/icons/fill.svg")
+                                            img(src="./img/icons/half.svg")
+                                            img(src="./img/icons/empty.svg")
+                                            .val 4/5
+                                    .text 
+                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, lectus id commodo pellentesque, orci ligula consequat elit, porta hendrerit sapien ipsum sit amet ante. Vestibulum tincidunt urna ut tellus faucibus, quis tincidunt eros blandit. Phasellus vulputate nisi id est sodales aliquet. In nec nibh et ante egestas posuere placerat sit amet ante. Proin feugiat tempor leo at lobortis. Nulla bibendum tincidunt velit, 
+                                        | vel eleifend felis vestibulum ut. Suspendisse dictum dui sit amet accumsan volutpat.
+                            li.project-team-member
+                                .project-team-member__header
+                                    .img-name 
+                                        img(src="./img/account-img.jpg")
+                                        .name Bertie Armstrong
+                                    .duty UX / UI Designer
+                                .project-team-member__body
+                                    .name-rating
+                                        .name Bertie Armstrong
+                                        .rating 
+                                            img(src="./img/icons/fill.svg")
+                                            img(src="./img/icons/fill.svg")
+                                            img(src="./img/icons/half.svg")
+                                            img(src="./img/icons/empty.svg")
+                                            .val 4/5
+                                    .text 
+                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, lectus id commodo pellentesque, orci ligula consequat elit, porta hendrerit sapien ipsum sit amet ante. Vestibulum tincidunt urna ut tellus faucibus, quis tincidunt eros blandit. Phasellus vulputate nisi id est sodales aliquet. In nec nibh et ante egestas posuere placerat sit amet ante. Proin feugiat tempor leo at lobortis. Nulla bibendum tincidunt velit, 
+                                        | vel eleifend felis vestibulum ut. Suspendisse dictum dui sit amet accumsan volutpat.
+                    .client-comment
+                        .header Müştərinin ümumi layihə ilə bağlı rəyi
+                        .table-responsive
+                            .info.mb-5
+                                .name Dexter Clark
+                                .project-name CO Project
+                                .rating
+                                    img(src="./img/icons/fill.svg")
+                                    img(src="./img/icons/fill.svg")
+                                    img(src="./img/icons/half.svg")
+                                    img(src="./img/icons/empty.svg")
+                                    .val 4/5
+                                .result
+                                    img(src="./img/icons/done.svg")
+                                    | Uğurlu
+                        .text 
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, lectus id commodo pellentesque, orci ligula consequat elit, porta hendrerit sapien ipsum sit amet ante. Vestibulum tincidunt urna ut tellus faucibus, quis tincidunt eros blandit. Phasellus vulputate nisi id est sodales aliquet. In nec nibh et ante egestas posuere placerat sit amet ante. Proin feugiat tempor leo at lobortis. Nulla bibendum tincidunt velit, 
+                            | vel eleifend felis vestibulum ut. Suspendisse dictum dui sit amet accumsan volutpat.

@@ -1,0 +1,39 @@
+.account-content
+    background-color: white
+    box-shadow: 0px 2px 5px rgba(104, 129, 159, 0.337139)
+    border-radius: 4px
+    // padding: 2rem
+    .acc-top
+        padding: 2rem
+        .acc-img
+            img
+                width: 100%
+                height: auto
+                max-width: 250px
+                border: 2px solid $second-color
+                box-sizing: border-box
+                border-radius: 3px  
+                margin-bottom: 2rem          
+        .acc-name-duty
+    .acc-title
+        font: 700 18px $main-font
+        color: $main-color
+        padding: 2.7rem 2rem
+        border-top: 1px solid #F2F2F2
+        border-bottom: 1px solid #F2F2F2
+    .acc-info-list
+        display: flex
+        .el
+            width: 33.3rem
+            margin-right: 2.2rem
+
+@media (max-width: 768px)
+    .account-content
+        .acc-top
+            .acc-img
+                display: flex
+                justify-content: center
+        .acc-info-list
+            flex-direction: column
+            .el
+                width: 100%

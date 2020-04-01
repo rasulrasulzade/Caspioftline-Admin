@@ -1,0 +1,108 @@
+extends ../template_includes/head
+
+block unique-content
+    include ../template_includes/navbar
+    main.main.d-flex
+        include ../template_includes/left
+        .content
+            .breadCrumb.my-5
+                a.breadCrumb-link(href="#") Dashboard
+                img.mx-3(src="./img/icons/next/w.svg")
+                a.breadCrumb-link(href="#") Üzvlər
+                img.mx-3(src="./img/icons/next/w.svg")
+                a.breadCrumb-link.breadCrumb-link--passive Bertie Armstrong
+            .any-member.w-100
+                .any-member__account.mb-5
+                    .header Profil
+                    .row.m-0.px-5
+                        .col-md-6.px-0.py-3.left
+                            img(src="./img/account-img.jpg")
+                            .name-duty
+                                .name Bertie Armstrong
+                                .duty Developer
+                        .col-md-6.px-0.py-3.right
+                            .key-list
+                                .key Kateqoriya
+                                .key Rolu
+                                .key Ortalamsı
+                                .key Qoş. tarixi
+                            .value-list
+                                .value Example
+                                    button(type="button")
+                                        img(src="./img/icons/edit/blue.svg")
+                                .value Komanda üzvü
+                                .value 
+                                    .stars
+                                        img(src="./img/icons/fill.svg")
+                                        img(src="./img/icons/half.svg")
+                                        img(src="./img/icons/empty.svg")
+                                    | 3,4/5
+                                .value 12 Oct 2020
+                    .btns
+                        button.btn.del(type="button") Sil
+                        button.btn.send-msg(type="button") Mesaj göndər
+                .row.m-0.about-project
+                        .col-md-6.px-5.elm.table-responsive.brdr-rg
+                            .elm__header İnformasiya
+                            .elm__body
+                                .elm-row 
+                                    .title Doğum günü
+                                    .data 28 January 1998
+                                .elm-row 
+                                    .title Cins
+                                    .data Kişi
+                                .elm-row 
+                                    .title Əlaqə nömrəsi
+                                    .data +994505005050
+                                .elm-row 
+                                    .title E-poçt
+                                    .data garywalker@gmail.com
+                        .col-md-6.px-5.elm.table-responsive
+                            .elm__header Sosial linklər
+                            .elm__body
+                                .elm-row 
+                                    .title Facebook
+                                    a.link(href="#") https://www.facebook.com/adoptionism664
+                                .elm-row 
+                                    .title Instagram
+                                    a.link(href="#") https://www.dropbox.com/archive-design/
+                                .elm-row 
+                                    .title Behance
+                                    a.link(href="#") https://www.behance.net/adopt-ionism744/
+                                .elm-row 
+                                    .title Github
+                                    a.link(href="#") https://www.behance.net/adopt-ionism744/                             
+                .client-comment.member-client-comment
+                        .header Layihələri və alınan rəylər
+                        .body
+                            .table-responsive
+                                .info.mb-5
+                                    .project-name CO Project
+                                    .rating
+                                        img(src="./img/icons/fill.svg")
+                                        img(src="./img/icons/fill.svg")
+                                        img(src="./img/icons/half.svg")
+                                        img(src="./img/icons/empty.svg")
+                                        .val 4/5
+                                    .result
+                                        img(src="./img/icons/done.svg")
+                                        | Uğurlu
+                            .text.mb-5 
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, lectus id commodo pellentesque, orci ligula consequat elit, porta hendrerit sapien ipsum sit amet ante. Vestibulum tincidunt urna ut tellus faucibus, quis tincidunt eros blandit. Phasellus vulputate nisi id est sodales aliquet. In nec nibh et ante egestas posuere placerat sit amet ante. Proin feugiat tempor leo at lobortis. Nulla bibendum tincidunt velit, 
+                                | vel eleifend felis vestibulum ut. Suspendisse dictum dui sit amet accumsan volutpat.
+                        .body
+                            .table-responsive
+                                .info.mb-5
+                                    .project-name SA Project
+                                    .rating
+                                        img(src="./img/icons/fill.svg")
+                                        img(src="./img/icons/fill.svg")
+                                        img(src="./img/icons/half.svg")
+                                        img(src="./img/icons/empty.svg")
+                                        .val 4/5
+                                    .result
+                                        img(src="./img/icons/x/red.svg")
+                                        | Uğurlu
+                            .text.client-comment
+                                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. In luctus, lectus id commodo pellentesque, orci ligula consequat elit, porta hendrerit sapien ipsum sit amet ante. Vestibulum tincidunt urna ut tellus faucibus, quis tincidunt eros blandit. Phasellus vulputate nisi id est sodales aliquet. In nec nibh et ante egestas posuere placerat sit amet ante. Proin feugiat tempor leo at lobortis. Nulla bibendum tincidunt velit, 
+                                | vel eleifend felis vestibulum ut. Suspendisse dictum dui sit amet accumsan volutpat.

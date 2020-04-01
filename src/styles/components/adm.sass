@@ -1,0 +1,132 @@
+.pages-tab
+    background-color: white
+    box-shadow: 0px 2px 5px rgba(104, 129, 159, 0.337139)
+    border-radius: 4px
+    .tab-header
+        display: flex
+        justify-content: center
+        border: 0
+        li
+            .tab-link
+                font: 400 15px $main-font
+                color: $content-black
+                padding: 2rem
+                border: 0
+                transition: 0.4s ease
+                border-bottom: 3px solid transparent
+                &:hover
+                    border-color: $main-color
+            .tab-link.active
+                    border-color: $main-color
+    .tab-inhalt
+        padding: 3rem 2rem
+
+
+.myList
+    .el
+        margin-bottom: 2rem
+        .title
+            font: 400 15px $main-font
+            color: #2C405A
+            line-height: 19px
+        .tab-input
+            width: 100%
+            font: 400 15px $main-font
+            color: #3F536E
+            line-height: 21px
+            background: white
+            border: 1px solid #A8C6DF
+            box-sizing: border-box
+            border-radius: 4px
+            outline: 0
+
+
+.adm-about-img
+    width: 22rem
+    height: 22rem
+    border-radius: 50%
+
+.tab-team-member
+    display: flex
+    justify-content: space-between
+    .el
+        width: 45%
+
+.tab-portfolio-frame
+    display: flex
+    .el
+        position: relative
+        width: 50%
+        margin-right: 2rem
+        .tab-file-label
+            position: relative
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 100%
+            background: white
+            border: 1px solid #A8C6DF
+            box-sizing: border-box
+            border-radius: 4px
+            outline: 0
+            font: 400 15px $main-font
+            color: $second-color
+            line-height: 21px
+            cursor: pointer
+            text-decoration: underline
+            .file-name
+                position: absolute
+                display: none
+                align-items: center
+                justify-content: space-between
+                top: 0
+                bottom: 0
+                left: 0
+                right: 0        
+                background-color: #F0F3F6
+                font: 400 14px $main-font
+                color: #777E8D           
+            img
+                width: 15px
+                height: 13px
+        .tab-file-label.has-file
+            .file-name 
+                display: flex
+        .tab-file-label.has-file + .del-file
+            display: block
+        .del-file
+            display: none
+            width: 35px
+            height: 35px
+            padding: 10px 10px
+            position: absolute
+            top: calc(50% - 8px)
+            right: 1.5rem
+            z-index: 2
+            cursor: pointer
+            img
+                width: 100%
+                height: 100%
+           
+
+.tab-add-icon
+    background-color: white
+    border: 0
+    outline: 0
+    box-shadow: none!important
+    display: flex
+    align-items: center
+    padding-left: 2.3rem
+    color: $second-color
+    font-size: 28px
+
+@media (max-width: 768px)
+    .tab-team-member
+        flex-direction: column
+        .el
+            width: 100%
+    
+    .tab-portfolio-frame
+        flex-direction: column
+        .el
+            width: 100%
