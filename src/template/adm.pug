@@ -59,21 +59,30 @@ block unique-content
                             li.el
                                 .title.mb-3 TEAM(down)
                                 input.tab-input.px-4.py-3(type="text")
-                        .row.m-0
-                            .col-md-4.mb-5.d-flex.align-items-center.justify-content-center.adm-about-img-wrapper
-                                img.adm-about-img(src="./img/account-img.jpg")
-                            .col-md-8
-                                ul.myList.tab-team-member
-                                    li.el
-                                        .title.mb-3 Komanda üzvü
-                                        input.tab-input.px-4.py-3(type="text")
-                                    li.el
-                                        .title.mb-3 Vəzifəsi
-                                        input.tab-input.px-4.py-3(type="text")
-                                ul.myList
-                                    li.el
-                                        .title.mb-3 Komanda üzvü
-                                        input.tab-input.px-4.py-3(type="text")
+                        .position-relative
+                            .row.m-0
+                                .col-md-4.mb-5.d-flex.align-items-center.justify-content-center
+                                    .adm-about-img-wrapper
+                                        img(src="./img/account-img.jpg")
+                                        .edit-del
+                                            button.btn
+                                                i.fa.fa-edit
+                                            button.btn
+                                                i.fa.fa-trash
+                                .col-md-8
+                                    ul.myList.tab-team-member
+                                        li.el
+                                            .title.mb-3 Komanda üzvü
+                                            input.tab-input.px-4.py-3(type="text")
+                                        li.el
+                                            .title.mb-3 Vəzifəsi
+                                            input.tab-input.px-4.py-3(type="text")
+                                    ul.myList
+                                        li.el
+                                            .title.mb-3 Komanda üzvü
+                                            input.tab-input.px-4.py-3(type="text")
+                            button.btn.tab-add-icon.mx-auto.tab-about-add-user
+                                i.fa.fa-plus-circle 
                         ul.myList
                             li.el
                                 .title.mb-3 PROCESS Title
@@ -122,6 +131,8 @@ block unique-content
                                     img(src="./img/cloud_upload.png")
                                 .del-file
                                     img(src="./img/icons/x/lightblue.svg")
+                        button.btn.tab-add-icon.mx-auto 
+                                i.fa.fa-plus-circle 
                     #careers.tab-pane.fade(role="tabpanel", aria-labelledby="careers-tab")
                         ul.myList
                             li.el
@@ -130,14 +141,13 @@ block unique-content
                             li.el
                                 .title.mb-3 Vakansiya adı
                                 input.tab-input.px-4.py-3(type="text")
-                            li.el.d-flex
-                                .W-95                                    
-                                    .title.mb-3 Vakansiya haqqında
-                                    textarea(name="", cols="30", rows="5").tab-input.px-4.py-3
-                                button.btn.tab-add-icon 
-                                    i.fa.fa-plus-circle 
+                            li.el                               
+                                .title.mb-3 Vakansiya haqqında
+                                textarea(name="", cols="30", rows="5").tab-input.px-4.py-3
+                            button.btn.tab-add-icon.mx-auto 
+                                i.fa.fa-plus-circle 
                     #faq.tab-pane.fade(role="tabpanel", aria-labelledby="faq-tab")
-                        ul.myList
+                        ul.myList.tab-faq-list
                             li.el
                                 .title.mb-3 FAQ
                                 input.tab-input.px-4.py-3(type="text")
@@ -147,9 +157,8 @@ block unique-content
                             li.el
                                 .title.mb-3 Sual 1
                                 input.tab-input.px-4.py-3(type="text")
-                            li.el.d-flex
-                                .W-95                               
-                                    .title.mb-3 Cavabı
-                                    textarea(name="", cols="30", rows="5").tab-input.px-4.py-3
-                                button.btn.tab-add-icon 
-                                    i.fa.fa-plus-circle 
+                            li.el                            
+                                .title.mb-3 Cavabı
+                                textarea(name="", cols="30", rows="5").tab-input.px-4.py-3
+                            button.btn.tab-add-icon.mx-auto 
+                                i.fa.fa-plus-circle 

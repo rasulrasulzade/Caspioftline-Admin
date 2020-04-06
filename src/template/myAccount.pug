@@ -11,8 +11,14 @@ block unique-content
                 a.breadCrumb-link.breadCrumb-link--passive Hesabım
             .account-content
                 .row.m-0.acc-top
-                    .col-md-3.acc-img
-                        img(src="./img/account-img.jpg")
+                    .col-md-3
+                        .acc-img
+                            img(src="./img/account-img.jpg")
+                            .edit-del
+                                button.btn
+                                    i.fa.fa-edit
+                                button.btn
+                                    i.fa.fa-trash
                     .col-md-9.acc-name-duty
                         ul.myList
                             li.el.mb-5

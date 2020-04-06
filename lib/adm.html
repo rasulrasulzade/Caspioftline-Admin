@@ -92,26 +92,36 @@
                   <input class="tab-input px-4 py-3" type="text">
                 </li>
               </ul>
-              <div class="row m-0">
-                <div class="col-md-4 mb-5 d-flex align-items-center justify-content-center adm-about-img-wrapper"><img class="adm-about-img" src="./img/account-img.jpg"></div>
-                <div class="col-md-8">
-                  <ul class="myList tab-team-member">
-                    <li class="el">
-                      <div class="title mb-3">Komanda üzvü</div>
-                      <input class="tab-input px-4 py-3" type="text">
-                    </li>
-                    <li class="el">
-                      <div class="title mb-3">Vəzifəsi</div>
-                      <input class="tab-input px-4 py-3" type="text">
-                    </li>
-                  </ul>
-                  <ul class="myList">
-                    <li class="el">
-                      <div class="title mb-3">Komanda üzvü</div>
-                      <input class="tab-input px-4 py-3" type="text">
-                    </li>
-                  </ul>
+              <div class="position-relative">
+                <div class="row m-0">
+                  <div class="col-md-4 mb-5 d-flex align-items-center justify-content-center">
+                    <div class="adm-about-img-wrapper"><img src="./img/account-img.jpg">
+                      <div class="edit-del">
+                        <button class="btn"><i class="fa fa-edit"></i></button>
+                        <button class="btn"><i class="fa fa-trash"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <ul class="myList tab-team-member">
+                      <li class="el">
+                        <div class="title mb-3">Komanda üzvü</div>
+                        <input class="tab-input px-4 py-3" type="text">
+                      </li>
+                      <li class="el">
+                        <div class="title mb-3">Vəzifəsi</div>
+                        <input class="tab-input px-4 py-3" type="text">
+                      </li>
+                    </ul>
+                    <ul class="myList">
+                      <li class="el">
+                        <div class="title mb-3">Komanda üzvü</div>
+                        <input class="tab-input px-4 py-3" type="text">
+                      </li>
+                    </ul>
+                  </div>
                 </div>
+                <button class="btn tab-add-icon mx-auto tab-about-add-user"><i class="fa fa-plus-circle"> </i></button>
               </div>
               <ul class="myList">
                 <li class="el">
@@ -173,6 +183,7 @@
                   <div class="del-file"><img src="./img/icons/x/lightblue.svg"></div>
                 </li>
               </ul>
+              <button class="btn tab-add-icon mx-auto"> <i class="fa fa-plus-circle"> </i></button>
             </div>
             <div class="tab-pane fade" id="careers" role="tabpanel" aria-labelledby="careers-tab">
               <ul class="myList">
@@ -184,17 +195,15 @@
                   <div class="title mb-3">Vakansiya adı</div>
                   <input class="tab-input px-4 py-3" type="text">
                 </li>
-                <li class="el d-flex">
-                  <div class="W-95">                                   
-                    <div class="title mb-3">Vakansiya haqqında</div>
-                    <textarea class="tab-input px-4 py-3" name="" cols="30" rows="5"></textarea>
-                  </div>
-                  <button class="btn tab-add-icon"> <i class="fa fa-plus-circle"> </i></button>
+                <li class="el">                              
+                  <div class="title mb-3">Vakansiya haqqında</div>
+                  <textarea class="tab-input px-4 py-3" name="" cols="30" rows="5"></textarea>
                 </li>
+                <button class="btn tab-add-icon mx-auto"> <i class="fa fa-plus-circle"> </i></button>
               </ul>
             </div>
             <div class="tab-pane fade" id="faq" role="tabpanel" aria-labelledby="faq-tab">
-              <ul class="myList">
+              <ul class="myList tab-faq-list">
                 <li class="el">
                   <div class="title mb-3">FAQ</div>
                   <input class="tab-input px-4 py-3" type="text">
@@ -207,13 +216,11 @@
                   <div class="title mb-3">Sual 1</div>
                   <input class="tab-input px-4 py-3" type="text">
                 </li>
-                <li class="el d-flex">
-                  <div class="W-95">                              
-                    <div class="title mb-3">Cavabı</div>
-                    <textarea class="tab-input px-4 py-3" name="" cols="30" rows="5"></textarea>
-                  </div>
-                  <button class="btn tab-add-icon"> <i class="fa fa-plus-circle"> </i></button>
+                <li class="el">                           
+                  <div class="title mb-3">Cavabı</div>
+                  <textarea class="tab-input px-4 py-3" name="" cols="30" rows="5"></textarea>
                 </li>
+                <button class="btn tab-add-icon mx-auto"> <i class="fa fa-plus-circle"> </i></button>
               </ul>
             </div>
           </div>

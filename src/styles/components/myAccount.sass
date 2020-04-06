@@ -6,14 +6,38 @@
     .acc-top
         padding: 2rem
         .acc-img
+            position: relative
+            width: 250px
+            height: auto
+            max-width: 100%
+            border: 2px solid $second-color
+            box-sizing: border-box
+            border-radius: 3px  
+            margin-bottom: 2rem 
+            &:hover
+                .edit-del
+                    display: flex
             img
                 width: 100%
-                height: auto
-                max-width: 250px
-                border: 2px solid $second-color
-                box-sizing: border-box
-                border-radius: 3px  
-                margin-bottom: 2rem          
+                height: 100%
+            .edit-del
+                display: none
+                justify-content: center
+                align-items: center
+                position: absolute
+                top: 0
+                bottom: 0
+                left: 0
+                right: 0
+                background: rgba(30, 30, 30, 0.3)
+                .btn
+                    background: transparent
+                    box-shadow: none
+                    outline: 0
+                    i
+                        color: white
+                        font-size: 36px
+       
         .acc-name-duty
     .acc-title
         font: 700 18px $main-font
@@ -31,8 +55,8 @@
     .account-content
         .acc-top
             .acc-img
-                display: flex
-                justify-content: center
+                margin-left: auto
+                margin-right: auto
         .acc-info-list
             flex-direction: column
             .el
