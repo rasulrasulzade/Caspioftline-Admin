@@ -2,9 +2,9 @@ var path = require("path");
 var { CleanWebpackPlugin } = require("clean-webpack-plugin");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 var MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const fs = require('fs')
-const CopyPlugin = require('copy-webpack-plugin');
-
+var fs = require('fs')
+var CopyPlugin = require('copy-webpack-plugin');
+var webpack = require("webpack")
 
 function generateHtmlPlugins (templateDir) {
   // Read files in template directory
@@ -71,6 +71,7 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.BannerPlugin(fs.readFileSync('./LICENSE', 'utf8')),
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: "styles.min.css"
